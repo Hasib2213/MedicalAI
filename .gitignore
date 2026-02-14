@@ -1,0 +1,34 @@
+# .gitignore
+
+# 1. Environment Variables (Most Important!)
+# আপনার Gemini API Key কখনোই গিটে পুশ করবেন না
+.env
+
+# 2. Python Virtual Environments
+# এনভায়রনমেন্টের বিশাল ফাইলগুলো আপলোড করার প্রয়োজন নেই
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# 3. Python Cache files
+# এগুলো অটো-জেনারেটেড ফাইল, যা গিটে দরকার হয় না
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# 4. Database & Storage
+# যদি লোকাল ডাটাবেজ (যেমন SQLite) ব্যবহার করেন
+*.db
+*.sqlite3
+
+# 5. OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# 6. IDE Settings
+# আপনার কোড এডিটরের পার্সোনাল সেটিংস
+.vscode/
+.idea/
